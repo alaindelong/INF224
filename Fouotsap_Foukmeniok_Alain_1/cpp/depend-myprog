@@ -1,0 +1,11 @@
+Omultimedia.o: Omultimedia.cpp Omultimedia.h
+Photo.o: Photo.cpp Photo.h Omultimedia.h
+Video.o: Video.cpp Video.h Omultimedia.h
+Film.o: Film.cpp Film.h Video.h Omultimedia.h
+Groupe.o: Groupe.cpp Groupe.h Omultimedia.h
+Fabriquer.o: Fabriquer.cpp Fabriquer.h Groupe.h Omultimedia.h Photo.h \
+ Video.h Film.h tcpserver.h cppsocket.h
+tcpserver.o: tcpserver.cpp tcpserver.h cppsocket.h
+cppsocket.o: cppsocket.cpp cppsocket.h
+main.o: main.cpp Omultimedia.h Photo.h Video.h Film.h Groupe.h \
+ Fabriquer.h tcpserver.h cppsocket.h

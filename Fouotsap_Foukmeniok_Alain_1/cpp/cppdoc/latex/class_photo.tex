@@ -1,0 +1,109 @@
+\hypertarget{class_photo}{\section{Photo Class Reference}
+\label{class_photo}\index{Photo@{Photo}}
+}
+
+
+The \hyperlink{class_photo}{Photo} class sous classe d'objet multimedia.  
+
+
+
+
+{\ttfamily \#include $<$Photo.\+h$>$}
+
+
+
+Inheritance diagram for Photo\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{class_photo__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Photo\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{class_photo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_photo_a4b68b4e4c551bbad82073932a0d3e800}{{\bfseries Photo} (unsigned int latitude, unsigned int longitude, string nom\+Photo, string path\+Photo)}\label{class_photo_a4b68b4e4c551bbad82073932a0d3e800}
+
+\item 
+\hypertarget{class_photo_a5d7841d5429264d5023baf921efd00b0}{unsigned int {\bfseries get\+Latitude\+Photo} () const }\label{class_photo_a5d7841d5429264d5023baf921efd00b0}
+
+\item 
+\hypertarget{class_photo_a081941cde635fe42bd017ef48b5f5ae6}{unsigned int {\bfseries get\+Longitude\+Photo} () const }\label{class_photo_a081941cde635fe42bd017ef48b5f5ae6}
+
+\item 
+\hypertarget{class_photo_aae3805bb2c61cb96cc11e7f09fe5bc1c}{void {\bfseries set\+Latitude\+Photo} (unsigned int latitude)}\label{class_photo_aae3805bb2c61cb96cc11e7f09fe5bc1c}
+
+\item 
+\hypertarget{class_photo_ab58d0b90b56098457653ffeddb1e03ff}{void {\bfseries set\+Longitude\+Photo} (unsigned int longitude)}\label{class_photo_ab58d0b90b56098457653ffeddb1e03ff}
+
+\item 
+void \hyperlink{class_photo_a6c80c6f056b2ec84cc30ad0afecd9806}{afficher\+Objet} (ostream \&s) const override
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_omultimedia_ae8942bb1db61d92962a71bbe7512c037}{Omultimedia\+::afficher\+Objet}. \end{DoxyCompactList}\item 
+void \hyperlink{class_photo_a5b9e3f3f830c4fd02f930fee9dc8dfb2}{jouer\+Objet} (string nom\+Objet, string path) const override
+\begin{DoxyCompactList}\small\item\em jouer\+Objet joue un objet multimedia à partir de son nom et son path \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_photo}{Photo} class sous classe d'objet multimedia. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_photo_a6c80c6f056b2ec84cc30ad0afecd9806}{\index{Photo@{Photo}!afficher\+Objet@{afficher\+Objet}}
+\index{afficher\+Objet@{afficher\+Objet}!Photo@{Photo}}
+\subsubsection[{afficher\+Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Photo\+::afficher\+Objet (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{s}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_photo_a6c80c6f056b2ec84cc30ad0afecd9806}
+
+
+\hyperlink{class_omultimedia_ae8942bb1db61d92962a71bbe7512c037}{Omultimedia\+::afficher\+Objet}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & flux de sortie(file,console,buffer de texte) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_omultimedia_ae8942bb1db61d92962a71bbe7512c037}{Omultimedia}.
+
+\hypertarget{class_photo_a5b9e3f3f830c4fd02f930fee9dc8dfb2}{\index{Photo@{Photo}!jouer\+Objet@{jouer\+Objet}}
+\index{jouer\+Objet@{jouer\+Objet}!Photo@{Photo}}
+\subsubsection[{jouer\+Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Photo\+::jouer\+Objet (
+\begin{DoxyParamCaption}
+\item[{string}]{nom\+Objet, }
+\item[{string}]{path}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_photo_a5b9e3f3f830c4fd02f930fee9dc8dfb2}
+
+
+jouer\+Objet joue un objet multimedia à partir de son nom et son path 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom\+Objet} & \\
+\hline
+{\em path} & c'est une méthode abstraite qui sera redéfinie dans chacune des sous classes \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_omultimedia_ab3836cd1744e98bdc6752ebd0283911e}{Omultimedia}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/cal/homes/fouotsap/\+Desktop/\+Fouotsap\+\_\+\+Foukmeniok\+\_\+\+Alain/cpp/Photo.\+h\item 
+/cal/homes/fouotsap/\+Desktop/\+Fouotsap\+\_\+\+Foukmeniok\+\_\+\+Alain/cpp/Photo.\+cpp\end{DoxyCompactItemize}

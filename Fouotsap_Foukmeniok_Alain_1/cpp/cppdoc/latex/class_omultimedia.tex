@@ -1,0 +1,99 @@
+\hypertarget{class_omultimedia}{\section{Omultimedia Class Reference}
+\label{class_omultimedia}\index{Omultimedia@{Omultimedia}}
+}
+
+
+The \hyperlink{class_omultimedia}{Omultimedia} class classe d'objet multimedia.  
+
+
+
+
+{\ttfamily \#include $<$Omultimedia.\+h$>$}
+
+
+
+Inheritance diagram for Omultimedia\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{class_omultimedia__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_omultimedia_a7f1e73b963ad35cf904c1ca05836c90d}{{\bfseries Omultimedia} (string object\+\_\+name, string object\+\_\+pathname)}\label{class_omultimedia_a7f1e73b963ad35cf904c1ca05836c90d}
+
+\item 
+\hypertarget{class_omultimedia_a9f9f433c1156c1febf54b88037de8ddb}{virtual void {\bfseries set\+Object\+Name} (string object\+\_\+name)}\label{class_omultimedia_a9f9f433c1156c1febf54b88037de8ddb}
+
+\item 
+\hypertarget{class_omultimedia_a4e8aebf79dbc7759e9566eaa18f00b38}{virtual void {\bfseries set\+Object\+Pathname} (string object\+\_\+pathname)}\label{class_omultimedia_a4e8aebf79dbc7759e9566eaa18f00b38}
+
+\item 
+\hypertarget{class_omultimedia_ae6404617513dd4b667fee79b72be6fb0}{virtual string {\bfseries get\+Object\+Name} () const }\label{class_omultimedia_ae6404617513dd4b667fee79b72be6fb0}
+
+\item 
+\hypertarget{class_omultimedia_a6f503402124f2c086c62ca473b3295e4}{virtual string {\bfseries get\+Object\+Pathname} () const }\label{class_omultimedia_a6f503402124f2c086c62ca473b3295e4}
+
+\item 
+virtual void \hyperlink{class_omultimedia_ae8942bb1db61d92962a71bbe7512c037}{afficher\+Objet} (ostream \&s) const =0
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_omultimedia_ae8942bb1db61d92962a71bbe7512c037}{Omultimedia\+::afficher\+Objet}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_omultimedia_ab3836cd1744e98bdc6752ebd0283911e}{jouer\+Objet} (string nom\+Objet, string path) const =0
+\begin{DoxyCompactList}\small\item\em jouer\+Objet joue un objet multimedia à partir de son nom et son path \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_omultimedia}{Omultimedia} class classe d'objet multimedia. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_omultimedia_ae8942bb1db61d92962a71bbe7512c037}{\index{Omultimedia@{Omultimedia}!afficher\+Objet@{afficher\+Objet}}
+\index{afficher\+Objet@{afficher\+Objet}!Omultimedia@{Omultimedia}}
+\subsubsection[{afficher\+Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Omultimedia\+::afficher\+Objet (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{s}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_omultimedia_ae8942bb1db61d92962a71bbe7512c037}
+
+
+\hyperlink{class_omultimedia_ae8942bb1db61d92962a71bbe7512c037}{Omultimedia\+::afficher\+Objet}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & flux de sortie(file,console,buffer de texte) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_photo_a6c80c6f056b2ec84cc30ad0afecd9806}{Photo}, and \hyperlink{class_video_a3a4dd11a3021cf824d98006498d0b2af}{Video}.
+
+\hypertarget{class_omultimedia_ab3836cd1744e98bdc6752ebd0283911e}{\index{Omultimedia@{Omultimedia}!jouer\+Objet@{jouer\+Objet}}
+\index{jouer\+Objet@{jouer\+Objet}!Omultimedia@{Omultimedia}}
+\subsubsection[{jouer\+Objet}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Omultimedia\+::jouer\+Objet (
+\begin{DoxyParamCaption}
+\item[{string}]{nom\+Objet, }
+\item[{string}]{path}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_omultimedia_ab3836cd1744e98bdc6752ebd0283911e}
+
+
+jouer\+Objet joue un objet multimedia à partir de son nom et son path 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom\+Objet} & \\
+\hline
+{\em path} & c'est une méthode abstraite qui sera redéfinie dans chacune des sous classes \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_photo_a5b9e3f3f830c4fd02f930fee9dc8dfb2}{Photo}, and \hyperlink{class_video_a62e160d1dc506f032841f2763c8e9377}{Video}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/cal/homes/fouotsap/\+Desktop/\+Fouotsap\+\_\+\+Foukmeniok\+\_\+\+Alain/cpp/Omultimedia.\+h\item 
+/cal/homes/fouotsap/\+Desktop/\+Fouotsap\+\_\+\+Foukmeniok\+\_\+\+Alain/cpp/Omultimedia.\+cpp\end{DoxyCompactItemize}

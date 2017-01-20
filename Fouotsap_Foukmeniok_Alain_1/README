@@ -1,0 +1,42 @@
+﻿ README de FOUOTSAP FOUKMENIOK Alain
+
+4) les méthodes déclarées dans les classes de bases et implémentées dans les sous classes sont appelées méthodes abstraites.
+ces méthodes doivent être déclarées "virtual" pour permettre à ce que les méthodes des objets pointés et non celles des pointeurs soient appélées lors polymorphisme.
+
+5) le polymorphisme est la propriété caractéristique de l'orienté objet qui permet de traiter un ensemble de classes liées entre elles sans tenir compte de leurs détails internes.
+les tableaux contiennent les pointeurs vers les objets. en C++ le tableau peut aussi contenir les objets par contre en JAVA le tableau contient toujours les pointeurs vers les objets.
+
+6) l'objet Film doit avoir sa propre copie du tableau pas juste un pointeur vers le tableau passé en argument.
+
+7) la classe Film doit être modifiée car elle a une variable d'instance créée avec "new", ainsi dans la destructeur de Film, il faut détruire aussi la variable d'instance "tableau".
+
+8) la classe groupe doit avoir un destructeur si elle contient les objets mais si elle contient les pointeurs vers les objets, le destructeur n'est pas nécessaire.
+
+la liste doit être une liste de pointeurs d'objets sinon un objet ne pourrait appartenir à plusieurs groupes. en Java la liste contient toujours les pointeurs d'objets. en C++ elle peut contenir les objets ou les pointeurs d'objets.
+
+utilisation du serveur C++
+
+le serveur C++ peut effectuer les opérations suivantes:
+-jouer un objet mulimedia(video ou photo) à partir de son nom.
+la synthaxe doit être la suivante "jouer objet nom de l'objet"
+exemple: jouer objet dschang.jpeg
+-rechercher un objet ou un groupe à partir de son nom
+la requête doit être la suivante: "rechercher objet nom de l'objet" ou
+"rechercher groupe nom du groupe".
+exemple:rechercher groupe mygroupe.
+
+
+Note: une partie du main qui joue le rôle de serveur est commentée, cette partie commentée est en fait le test des questions 1 à 10. après chaque question je testais le bon fonctionnement.
+
+
+utilisation télécommande Java swing
+
+l'interface graphique contient plusieurs boutons. Parmis ces boutons seuls 3 sont vraiment utiles. leurs fonctions sont les suivantes:
+"click to connect" permet détablir la connexion avec le serveur.
+"Enter" permet d'envoyer la requête saisie dans la zone de texte(JTextField)
+"Close" permet de fermer l'interface graphique; donc la connexion avec le serveur.
+
+les autres boutons ajoutent et affichent juste une ligne de texte sur l'écran(JTextArea).
+
+
+ 

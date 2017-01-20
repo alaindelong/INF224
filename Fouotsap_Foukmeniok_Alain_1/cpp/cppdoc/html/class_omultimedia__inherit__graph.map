@@ -1,0 +1,5 @@
+<map id="Omultimedia" name="Omultimedia">
+<area shape="rect" id="node2" href="$class_photo.html" title="The Photo class sous classe d&#39;objet multimedia. " alt="" coords="5,80,61,107"/>
+<area shape="rect" id="node3" href="$class_video.html" title="The Video class sous classe d&#39;objet multimedia. " alt="" coords="86,80,141,107"/>
+<area shape="rect" id="node4" href="$class_film.html" title="The Film class sous classe de Video. " alt="" coords="90,155,137,181"/>
+</map>

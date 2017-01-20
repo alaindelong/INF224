@@ -1,0 +1,105 @@
+\hypertarget{class_video}{\section{Video Class Reference}
+\label{class_video}\index{Video@{Video}}
+}
+
+
+The \hyperlink{class_video}{Video} class sous classe d'objet multimedia.  
+
+
+
+
+{\ttfamily \#include $<$Video.\+h$>$}
+
+
+
+Inheritance diagram for Video\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{class_video__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Video\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{class_video__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_video_a5d535758640a431850f8d67773b20211}{{\bfseries Video} (unsigned int duree, string nom\+Video, string nom\+Path\+Video)}\label{class_video_a5d535758640a431850f8d67773b20211}
+
+\item 
+\hypertarget{class_video_ac9ed820535234a8c6520f68a60e72a61}{unsigned int {\bfseries get\+Duree} () const }\label{class_video_ac9ed820535234a8c6520f68a60e72a61}
+
+\item 
+\hypertarget{class_video_a8174feb6113c5b55a38b138d5be3e97b}{void {\bfseries set\+Duree} (unsigned int duree)}\label{class_video_a8174feb6113c5b55a38b138d5be3e97b}
+
+\item 
+void \hyperlink{class_video_a3a4dd11a3021cf824d98006498d0b2af}{afficher\+Objet} (ostream \&s) const override
+\begin{DoxyCompactList}\small\item\em afficher\+Objet affiche les attributs d'un objet video(nom de l'objet et le chemin d'accès) \end{DoxyCompactList}\item 
+void \hyperlink{class_video_a62e160d1dc506f032841f2763c8e9377}{jouer\+Objet} (string nom\+Objet, string path) const override
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_video_a62e160d1dc506f032841f2763c8e9377}{Video\+::jouer\+Objet}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_video}{Video} class sous classe d'objet multimedia. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_video_a3a4dd11a3021cf824d98006498d0b2af}{\index{Video@{Video}!afficher\+Objet@{afficher\+Objet}}
+\index{afficher\+Objet@{afficher\+Objet}!Video@{Video}}
+\subsubsection[{afficher\+Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Video\+::afficher\+Objet (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{s}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_video_a3a4dd11a3021cf824d98006498d0b2af}
+
+
+afficher\+Objet affiche les attributs d'un objet video(nom de l'objet et le chemin d'accès) 
+
+\hyperlink{class_video_a3a4dd11a3021cf824d98006498d0b2af}{Video\+::afficher\+Objet}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_omultimedia_ae8942bb1db61d92962a71bbe7512c037}{Omultimedia}.
+
+\hypertarget{class_video_a62e160d1dc506f032841f2763c8e9377}{\index{Video@{Video}!jouer\+Objet@{jouer\+Objet}}
+\index{jouer\+Objet@{jouer\+Objet}!Video@{Video}}
+\subsubsection[{jouer\+Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Video\+::jouer\+Objet (
+\begin{DoxyParamCaption}
+\item[{string}]{nom\+Objet, }
+\item[{string}]{path}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_video_a62e160d1dc506f032841f2763c8e9377}
+
+
+\hyperlink{class_video_a62e160d1dc506f032841f2763c8e9377}{Video\+::jouer\+Objet}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom\+Objet} & \+: Nom de l'objet à jouer. Nom photo ou nom de la video \\
+\hline
+{\em path} & emplacement de l'objet \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_omultimedia_ab3836cd1744e98bdc6752ebd0283911e}{Omultimedia}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/cal/homes/fouotsap/\+Desktop/\+Fouotsap\+\_\+\+Foukmeniok\+\_\+\+Alain/cpp/Video.\+h\item 
+/cal/homes/fouotsap/\+Desktop/\+Fouotsap\+\_\+\+Foukmeniok\+\_\+\+Alain/cpp/Video.\+cpp\end{DoxyCompactItemize}

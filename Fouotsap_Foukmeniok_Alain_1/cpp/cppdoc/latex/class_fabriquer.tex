@@ -1,0 +1,269 @@
+\hypertarget{class_fabriquer}{\section{Fabriquer Class Reference}
+\label{class_fabriquer}\index{Fabriquer@{Fabriquer}}
+}
+
+
+The \hyperlink{class_fabriquer}{Fabriquer} class c'est la classe principale de notre serveur,elle permet de créer des objets multimedia,de créer des groupes d'objets, de les supprimer, de les jouer, de les afficher et de les jouer.  
+
+
+
+
+{\ttfamily \#include $<$Fabriquer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Photo\+Ptr \hyperlink{class_fabriquer_a43ca6503ecd78c032d39646e4aaf34a2}{creer\+Photo} (int lat, int lon, string nom\+Photo, string path\+Photo)
+\begin{DoxyCompactList}\small\item\em creer\+Photo cree un objet photo \end{DoxyCompactList}\item 
+Video\+Ptr \hyperlink{class_fabriquer_afbc9a780e605919e401c68de68b321c9}{creer\+Video} (int duree, string nomvideo, string path\+Video)
+\begin{DoxyCompactList}\small\item\em creer\+Video cree un objet video \end{DoxyCompactList}\item 
+Film\+Ptr \hyperlink{class_fabriquer_a6051c8212fd9c103367a5dd1daa85497}{creer\+Film} (int numchap, string nomfilm, string path\+Film)
+\begin{DoxyCompactList}\small\item\em creer\+Film cree un objet film \end{DoxyCompactList}\item 
+Groupe\+Ptr \hyperlink{class_fabriquer_ae2aa5d0a9600f0b2613138fa80e9eb82}{creer\+Groupe} (string nomgroupe)
+\begin{DoxyCompactList}\small\item\em creer\+Groupe cree un objet groupe \end{DoxyCompactList}\item 
+void \hyperlink{class_fabriquer_a348f308764daf0552ad2fe20c213ba72}{supprimer\+Objet} (string nom\+Objet)
+\begin{DoxyCompactList}\small\item\em supprimer\+Objet supprime un objet de la table d'objet et de tous les groupes qui le contiennent \end{DoxyCompactList}\item 
+void \hyperlink{class_fabriquer_a6b079553cd4d8ca1b8ac4a209630eff8}{supprimer\+Groupe} (string nom\+Groupe)
+\begin{DoxyCompactList}\small\item\em supprimer\+Groupe supprime un groupe de la table contenant les groupes \end{DoxyCompactList}\item 
+Omultimedia\+Ptr \hyperlink{class_fabriquer_a1ddcb6f722edfbc0695933bcc4aba54c}{rechercher\+Objet} (string nom\+Objet) const 
+\begin{DoxyCompactList}\small\item\em rechercher\+Objet recherche un objet dans la table d'objets et affiche ses attributs(nom de l'objet et le path du repertoire) \end{DoxyCompactList}\item 
+Groupe\+Ptr \hyperlink{class_fabriquer_a70a1e7aab8a02d513f9df4a4a3bd4670}{rechercher\+Groupe} (string nom\+Groupe) const 
+\begin{DoxyCompactList}\small\item\em rechercher\+Groupe recherche un groupe dans la table des groupes et affiche tous les éléments du groupe \end{DoxyCompactList}\item 
+void \hyperlink{class_fabriquer_a7b38cc395f557fe9de2632f8889afa59}{jouer\+Objet} (string nom\+Objet) const 
+\begin{DoxyCompactList}\small\item\em jouer\+Objet joue un objet multimedia \end{DoxyCompactList}\item 
+bool \hyperlink{class_fabriquer_a397d5ea032597d8e8c87d4f4f996b451}{process\+Request} (\hyperlink{classcppu_1_1_t_c_p_connection}{T\+C\+P\+Connection} \&cnx, const string \&request, string \&response)
+\begin{DoxyCompactList}\small\item\em process\+Request fonction qui gère la connexion chaque fois qu'un client se connecte\+: peut rechercher un objet multimedia ou un groupe d'objets à partir du nom, peut aussi jouer un objet \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_fabriquer}{Fabriquer} class c'est la classe principale de notre serveur,elle permet de créer des objets multimedia,de créer des groupes d'objets, de les supprimer, de les jouer, de les afficher et de les jouer. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_fabriquer_a6051c8212fd9c103367a5dd1daa85497}{\index{Fabriquer@{Fabriquer}!creer\+Film@{creer\+Film}}
+\index{creer\+Film@{creer\+Film}!Fabriquer@{Fabriquer}}
+\subsubsection[{creer\+Film}]{\setlength{\rightskip}{0pt plus 5cm}Film\+Ptr Fabriquer\+::creer\+Film (
+\begin{DoxyParamCaption}
+\item[{int}]{numchap, }
+\item[{string}]{nomfilm, }
+\item[{string}]{path\+Film}
+\end{DoxyParamCaption}
+)}}\label{class_fabriquer_a6051c8212fd9c103367a5dd1daa85497}
+
+
+creer\+Film cree un objet film 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numchap} & définit le nombre de chapitres \\
+\hline
+{\em nomfilm} & nom de l'objet film crée \\
+\hline
+{\em path\+Film} & chemin du repertoire contenant le film \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retourne un pointeur vers l'objet crée 
+\end{DoxyReturn}
+\hypertarget{class_fabriquer_ae2aa5d0a9600f0b2613138fa80e9eb82}{\index{Fabriquer@{Fabriquer}!creer\+Groupe@{creer\+Groupe}}
+\index{creer\+Groupe@{creer\+Groupe}!Fabriquer@{Fabriquer}}
+\subsubsection[{creer\+Groupe}]{\setlength{\rightskip}{0pt plus 5cm}Groupe\+Ptr Fabriquer\+::creer\+Groupe (
+\begin{DoxyParamCaption}
+\item[{string}]{nomgroupe}
+\end{DoxyParamCaption}
+)}}\label{class_fabriquer_ae2aa5d0a9600f0b2613138fa80e9eb82}
+
+
+creer\+Groupe cree un objet groupe 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nomgroupe} & nom de l'objet groupe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retourne un pointeur vers le premier élément de la liste(groupe) 
+\end{DoxyReturn}
+\hypertarget{class_fabriquer_a43ca6503ecd78c032d39646e4aaf34a2}{\index{Fabriquer@{Fabriquer}!creer\+Photo@{creer\+Photo}}
+\index{creer\+Photo@{creer\+Photo}!Fabriquer@{Fabriquer}}
+\subsubsection[{creer\+Photo}]{\setlength{\rightskip}{0pt plus 5cm}Photo\+Ptr Fabriquer\+::creer\+Photo (
+\begin{DoxyParamCaption}
+\item[{int}]{lat, }
+\item[{int}]{lon, }
+\item[{string}]{nom\+Photo, }
+\item[{string}]{path\+Photo}
+\end{DoxyParamCaption}
+)}}\label{class_fabriquer_a43ca6503ecd78c032d39646e4aaf34a2}
+
+
+creer\+Photo cree un objet photo 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lat} & hauteur de l'objet \\
+\hline
+{\em lon} & largeur de l'objet \\
+\hline
+{\em nom\+Photo} & nom de la photo dans le repertoire \\
+\hline
+{\em path\+Photo} & chemin du repertoire contenant la photo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retourne un pointeur vers l'objet crée 
+\end{DoxyReturn}
+\hypertarget{class_fabriquer_afbc9a780e605919e401c68de68b321c9}{\index{Fabriquer@{Fabriquer}!creer\+Video@{creer\+Video}}
+\index{creer\+Video@{creer\+Video}!Fabriquer@{Fabriquer}}
+\subsubsection[{creer\+Video}]{\setlength{\rightskip}{0pt plus 5cm}Video\+Ptr Fabriquer\+::creer\+Video (
+\begin{DoxyParamCaption}
+\item[{int}]{duree, }
+\item[{string}]{nomvideo, }
+\item[{string}]{path\+Video}
+\end{DoxyParamCaption}
+)}}\label{class_fabriquer_afbc9a780e605919e401c68de68b321c9}
+
+
+creer\+Video cree un objet video 
+
+
+\begin{DoxyParams}{Parameters}
+{\em duree} & duree de l'objet \\
+\hline
+{\em nomvideo} & nom de la video dans le repertoire \\
+\hline
+{\em path\+Video} & chemin du repertoire contenant la video \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retourne un pointeur vers l'objet crée 
+\end{DoxyReturn}
+\hypertarget{class_fabriquer_a7b38cc395f557fe9de2632f8889afa59}{\index{Fabriquer@{Fabriquer}!jouer\+Objet@{jouer\+Objet}}
+\index{jouer\+Objet@{jouer\+Objet}!Fabriquer@{Fabriquer}}
+\subsubsection[{jouer\+Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Fabriquer\+::jouer\+Objet (
+\begin{DoxyParamCaption}
+\item[{string}]{nom\+Objet}
+\end{DoxyParamCaption}
+) const}}\label{class_fabriquer_a7b38cc395f557fe9de2632f8889afa59}
+
+
+jouer\+Objet joue un objet multimedia 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom\+Objet} & nomde l'objet multimedia à jouer (photo ou video) \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_fabriquer_a397d5ea032597d8e8c87d4f4f996b451}{\index{Fabriquer@{Fabriquer}!process\+Request@{process\+Request}}
+\index{process\+Request@{process\+Request}!Fabriquer@{Fabriquer}}
+\subsubsection[{process\+Request}]{\setlength{\rightskip}{0pt plus 5cm}bool Fabriquer\+::process\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+C\+P\+Connection} \&}]{cnx, }
+\item[{const string \&}]{request, }
+\item[{string \&}]{response}
+\end{DoxyParamCaption}
+)}}\label{class_fabriquer_a397d5ea032597d8e8c87d4f4f996b451}
+
+
+process\+Request fonction qui gère la connexion chaque fois qu'un client se connecte\+: peut rechercher un objet multimedia ou un groupe d'objets à partir du nom, peut aussi jouer un objet 
+
+\hyperlink{class_fabriquer_a397d5ea032597d8e8c87d4f4f996b451}{Fabriquer\+::process\+Request}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cnx} & \\
+\hline
+{\em request} & est la requête du client \\
+\hline
+{\em response} & est la réponse du serveur suite à la requête du client \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true dans le cas où le client se connecte correctement et false dans le cas contraire
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em cnx} & \\
+\hline
+{\em request} & un exemple de requête \char`\"{}rechercher objet dschang.\+jpeg\char`\"{} ou bien \char`\"{}jouer objet videoinf224.\+webm\char`\"{} ou \char`\"{}rechercher groupe mygroupe\char`\"{} \\
+\hline
+{\em response} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_fabriquer_a70a1e7aab8a02d513f9df4a4a3bd4670}{\index{Fabriquer@{Fabriquer}!rechercher\+Groupe@{rechercher\+Groupe}}
+\index{rechercher\+Groupe@{rechercher\+Groupe}!Fabriquer@{Fabriquer}}
+\subsubsection[{rechercher\+Groupe}]{\setlength{\rightskip}{0pt plus 5cm}Groupe\+Ptr Fabriquer\+::rechercher\+Groupe (
+\begin{DoxyParamCaption}
+\item[{string}]{nom\+Groupe}
+\end{DoxyParamCaption}
+) const}}\label{class_fabriquer_a70a1e7aab8a02d513f9df4a4a3bd4670}
+
+
+rechercher\+Groupe recherche un groupe dans la table des groupes et affiche tous les éléments du groupe 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom\+Groupe} & nom du groupe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retourne un pointeur vers le premier élément du groupe(la tête de la liste) 
+\end{DoxyReturn}
+\hypertarget{class_fabriquer_a1ddcb6f722edfbc0695933bcc4aba54c}{\index{Fabriquer@{Fabriquer}!rechercher\+Objet@{rechercher\+Objet}}
+\index{rechercher\+Objet@{rechercher\+Objet}!Fabriquer@{Fabriquer}}
+\subsubsection[{rechercher\+Objet}]{\setlength{\rightskip}{0pt plus 5cm}Omultimedia\+Ptr Fabriquer\+::rechercher\+Objet (
+\begin{DoxyParamCaption}
+\item[{string}]{nom\+Objet}
+\end{DoxyParamCaption}
+) const}}\label{class_fabriquer_a1ddcb6f722edfbc0695933bcc4aba54c}
+
+
+rechercher\+Objet recherche un objet dans la table d'objets et affiche ses attributs(nom de l'objet et le path du repertoire) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom\+Objet} & nom de l'objet à rechercher \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retourne un pointeur vers l'objet s'il existe sinon retourne nullptr 
+\end{DoxyReturn}
+\hypertarget{class_fabriquer_a6b079553cd4d8ca1b8ac4a209630eff8}{\index{Fabriquer@{Fabriquer}!supprimer\+Groupe@{supprimer\+Groupe}}
+\index{supprimer\+Groupe@{supprimer\+Groupe}!Fabriquer@{Fabriquer}}
+\subsubsection[{supprimer\+Groupe}]{\setlength{\rightskip}{0pt plus 5cm}void Fabriquer\+::supprimer\+Groupe (
+\begin{DoxyParamCaption}
+\item[{string}]{nom\+Groupe}
+\end{DoxyParamCaption}
+)}}\label{class_fabriquer_a6b079553cd4d8ca1b8ac4a209630eff8}
+
+
+supprimer\+Groupe supprime un groupe de la table contenant les groupes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom\+Groupe} & nom du groupe à supprimer \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_fabriquer_a348f308764daf0552ad2fe20c213ba72}{\index{Fabriquer@{Fabriquer}!supprimer\+Objet@{supprimer\+Objet}}
+\index{supprimer\+Objet@{supprimer\+Objet}!Fabriquer@{Fabriquer}}
+\subsubsection[{supprimer\+Objet}]{\setlength{\rightskip}{0pt plus 5cm}void Fabriquer\+::supprimer\+Objet (
+\begin{DoxyParamCaption}
+\item[{string}]{nom\+Objet}
+\end{DoxyParamCaption}
+)}}\label{class_fabriquer_a348f308764daf0552ad2fe20c213ba72}
+
+
+supprimer\+Objet supprime un objet de la table d'objet et de tous les groupes qui le contiennent 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom\+Objet} & nom de l'objet à supprimer \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/cal/homes/fouotsap/\+Desktop/\+Fouotsap\+\_\+\+Foukmeniok\+\_\+\+Alain/cpp/Fabriquer.\+h\item 
+/cal/homes/fouotsap/\+Desktop/\+Fouotsap\+\_\+\+Foukmeniok\+\_\+\+Alain/cpp/Fabriquer.\+cpp\end{DoxyCompactItemize}
